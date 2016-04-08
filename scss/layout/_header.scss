@@ -1,0 +1,61 @@
+header {
+    background: $mine-shaft;
+    color: $tara;
+       p {
+        margin-top: 40px;
+        margin-bottom: 0;
+        padding: 0 7px 20px 15px;
+        font-size: 1.2em;
+            @include narrow{
+               margin-top: 0;
+               width: 55%;
+               @include flex-order(-1);
+               
+           }
+          @include wide{
+               padding-left: 0;
+           }
+    } 
+      a {
+        color: $lightning-yellow;
+     }
+}
+
+.photocon {
+    @include flex;
+    @include flex-justify-content-center;
+    @include size(250px, 180px);
+    background: $sun;
+    margin: auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    border-radius: 5%;
+        @include narrow{
+             width: 290px;
+             margin: 0;
+             @include flex-justify-content(end);
+             
+        }
+        @include wide{
+            @include flex-justify-content(end);
+        }
+}
+.profile-pic {
+    @extend %round;
+    @include size(150px, 150px);
+    @include align-self(center);
+    border: 7px double $white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        @include narrow{
+             margin: auto;
+        }
+}
+
+
+.photo {
+     @include narrow{
+        @include flex;
+        @include flex-justify-content(end);
+        width: 50%;
+     }
+
+}

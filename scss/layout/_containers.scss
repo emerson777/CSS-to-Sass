@@ -1,0 +1,41 @@
+main {
+    background: url('#{$path-img}/bg.jpg') no-repeat top center;
+    background-size: cover;
+    margin-bottom: 0;
+    & h1 {
+         @extend %centered;
+    }
+}
+
+.title {
+    color: $lightning-yellow;
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding-top: 40px;
+    text-shadow: 0 0 7px rgba(44, 44, 44, 1);
+}
+
+.gallery {
+    @include flex;
+    @include flex-space-around;
+    @include flex-wrap;
+    @include wide{
+            max-width: $max-width;
+            margin: 0 auto;
+       }
+}
+.item {
+    @include flex-grow(1, 0, 14em);
+    margin: 1em;
+    width: 95%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      @include wide{
+         @include flex-basis(30%);
+       }
+}
+.img {
+    margin: auto;
+    @include size(100%, 20%);
+    border-radius: 5%;
+}

@@ -1,0 +1,56 @@
+footer {
+    @include flex;
+    @include flex-justify-content-center;
+    background: $mine-shaft;
+    color: $tara;
+    height: 50px;
+     a {
+        @include narrow{
+            padding: 10px 15px;
+        }
+     }
+     
+}
+.foot {
+    @include flex;
+    @include flex-direction-row;
+    @include flex-justify-content(center);
+    @include size(90%, 50px);
+       h3 {
+             font-size: .9em;
+             @include flex-grow(1);
+         }
+       @include narrow {
+          @include flex-space-between;
+      }
+       @include wide {
+            max-width: $max-width;
+        }
+}
+
+.footmenu {
+    @include flex;
+    @include flex-justify-content(end);
+    @extend %upperCase;
+      & h3 {
+        @include flex-grow(1);
+      }
+}
+
+.hid {
+    display: none;
+    @include narrow{
+         display: initial;  
+     }
+}
+
+
+.hid1 {
+   @include narrow{
+           display: none;
+    } 
+}
+
+.info {
+    color: $lightning-yellow;
+}

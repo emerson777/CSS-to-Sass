@@ -1,0 +1,25 @@
+%centered {
+	  text-align: center;
+}
+
+%round {
+	border-radius: 50%;
+}
+
+%upperCase {
+	text-transform: uppercase;
+}
+%col-white {
+   color: $white;
+}
+
+%icons {
+	@include size(30px,30px);
+	margin-bottom: 0;
+	padding-bottom: 0;
+	position: absolute;
+	top: 32px;
+	left: 7px;
+	z-index: 110000;
+	cursor: pointer;
+}

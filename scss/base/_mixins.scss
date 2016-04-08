@@ -1,0 +1,124 @@
+
+@mixin flex() {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+}
+
+@mixin flex-space-around() {
+	  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@mixin flex-space-between(){
+     -webkit-box-pack: justify;
+     -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+}
+
+
+@mixin flex-wrap() {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+}
+
+
+@mixin flex-justify-content($position) {
+       -webkit-box-pack: $position;
+       -webkit-justify-content: flex-#{$position};
+        -ms-flex-pack: $position;
+        justify-content: flex-#{$position};
+}
+
+
+@mixin flex-justify-content-center(){
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+         justify-content: center
+}
+
+
+@mixin flex-basis($value){
+         webkit-flex-basis: $value;
+        -ms-flex-preferred-size: $value;
+         flex-basis: $value;
+}
+
+@mixin  flex-direction-column{
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -webkit-flex-direction: column;
+         -ms-flex-direction: column;
+         flex-direction: column;
+}
+
+
+@mixin flex-direction-row() {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+         flex-direction: row;
+}
+
+
+@mixin flex-align-items($position) {
+        -webkit-box-align: $position;
+        -webkit-align-items: $position;
+        -ms-flex-align: $position;
+        -ms-grid-row-align: $position;
+        align-items: $position;
+}
+
+@mixin align-self($position){
+       -webkit-align-self: $position;
+       -ms-flex-item-align: $position;
+        align-self: $position;
+}
+
+
+@mixin flex-grow($size, $shrink:null, $basis:null){
+	  -webkit-box-flex: $size;
+      -webkit-flex-grow: $size;
+      -ms-flex-positive: $size;
+      flex-grow: $size;
+      -webkit-flex-shrink: $shrink;
+      -ms-flex-negative: $shrink;
+      flex-shrink: $shrink;
+      -webkit-flex-basis: $basis;
+      -ms-flex-preferred-size: $basis;
+       flex-basis: $basis;
+
+}
+
+@mixin flex-order($value) {
+    -webkit-order: $value;
+    -ms-flex-order: -$value;
+     order: $value;
+}
+
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+
+//MEDIA QUERIES
+
+@mixin narrow{
+  @media (min-width: #{$break-narrow}){
+      @content;
+  }
+}
+
+@mixin wide{
+  @media (min-width: #{$break-wide}){
+     @content;
+  }
+}

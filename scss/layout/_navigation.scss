@@ -1,0 +1,66 @@
+.container {
+    padding-top: .5em;
+    padding-bottom: .5em;
+        @include narrow{
+            @include flex;
+            width: $cont-width;
+            @include flex-direction-column;
+            @include flex-align-items(center);
+            margin: auto;
+        }
+       @include wide{
+            @include flex-direction-row;
+            @include flex-space-between;
+            max-width: $max-width;
+        }
+}
+
+.container2 {
+     @include narrow{
+            @include flex;
+            width: $cont-width;
+            margin: auto;
+            padding-bottom: 40px;
+     }
+     @include wide{
+            max-width: $max-width;
+        }
+}
+
+.name {
+      @extend %centered;
+      @extend %col-white; 
+    }
+
+.main-nav {
+    margin-top: 5px;
+    padding: 0;
+    a {
+        padding: 10px 15px;
+        @extend %centered;
+        display: block;
+        margin: 0;
+        font-size: 1em;
+        @extend %upperCase;
+        color: $lightning-yellow;
+        font-weight: bold;
+    }
+    li {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+      @include narrow{
+        @include flex;
+    }
+}
+
+.selected {
+    @extend %col-white;
+}
+
+
+.name {
+   @include narrow{
+         padding: 0;
+    }
+}

@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include flex;
+    @include flex-direction-column;
+    font-family: $roboto-font-stack;
+    color: #222;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $raleway-font-stack;
+}
+
+p {
+    margin-bottom: 1.8em;
+    padding-left: 15px;
+    padding-right: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+ul,
+ol {
+    list-style-type: none;
+}

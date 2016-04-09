@@ -5,7 +5,7 @@ header {
         margin-top: 40px;
         margin-bottom: 0;
         padding: 0 7px 20px 15px;
-        font-size: 1.2em;
+        font-size: $header-p;
             @include narrow{
                margin-top: 0;
                width: 55%;
@@ -27,7 +27,7 @@ header {
     @include size(250px, 180px);
     background: $sun;
     margin: auto;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 30px $tundora-lgt;
     border-radius: 5%;
         @include narrow{
              width: 290px;
@@ -44,7 +44,7 @@ header {
     @include size(150px, 150px);
     @include align-self(center);
     border: 7px double $white;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px $white;
         @include narrow{
              margin: auto;
         }

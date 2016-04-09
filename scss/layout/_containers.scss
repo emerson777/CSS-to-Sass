@@ -9,11 +9,11 @@ main {
 
 .title {
     color: $lightning-yellow;
-    font-size: 3em;
+    font-size: $title-s;
     margin-top: 0;
     margin-bottom: 60px;
     padding-top: 40px;
-    text-shadow: 0 0 7px rgba(44, 44, 44, 1);
+    text-shadow: 0 0 7px $tundora-lgt;
 }
 
 .gallery {
@@ -29,7 +29,7 @@ main {
     @include flex-grow(1, 0, 14em);
     margin: 1em;
     width: 95%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid $westar;
       @include wide{
          @include flex-basis(30%);
        }

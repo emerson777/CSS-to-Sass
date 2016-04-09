@@ -6,8 +6,8 @@ body {
     @include flex;
     @include flex-direction-column;
     font-family: $roboto-font-stack;
-    color: #222;
-    line-height: 1.6;
+    color: $mine-shaft;
+    line-height: $line-height;
     min-height: 100vh;
 }
 
@@ -25,7 +25,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #999;
+    color: $dusty-gray;
 }
 ul,
 ol {

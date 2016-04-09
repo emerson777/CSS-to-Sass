@@ -14,10 +14,10 @@ footer {
 .foot {
     @include flex;
     @include flex-direction-row;
-    @include flex-justify-content(center);
+    @include flex-justify-content-center;
     @include size(90%, 50px);
        h3 {
-             font-size: .9em;
+             font-size: $foot-h3;
              @include flex-grow(1);
          }
        @include narrow {

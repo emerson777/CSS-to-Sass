@@ -9,6 +9,12 @@ $mine-shaft: #2C2C2C;
 $tara: #EFFBF2;
 $white: #FFF;
 $sun: #F8AD0E;
+$dusty-gray: #999999;
+$westar: #DFDED9;
+$tundora: #444444;
+$tundora-lgt: lighten($tundora, 1%);
+
+
 
 //MEDIA QUERIES
 $break-narrow: 768px;
@@ -22,3 +28,11 @@ $path-img: '../images';
 //Sizes 
 $max-width: 1280px;
 $cont-width: 90%;
+$line-height: 1.6;
+
+//FONT SIZES
+$title-s: 3em;
+$foot-h3: 0.9em;
+$header-p: 1.2em;
+$m-nav-a: 1em;
+$main-h2: 2.5em;

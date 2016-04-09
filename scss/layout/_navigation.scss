@@ -40,7 +40,7 @@
         @extend %centered;
         display: block;
         margin: 0;
-        font-size: 1em;
+        font-size: $m-nav-a;
         @extend %upperCase;
         color: $lightning-yellow;
         font-weight: bold;

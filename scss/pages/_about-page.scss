@@ -1,11 +1,11 @@
 .main {
     @include flex;
     @include flex-direction-column;
-    @include flex-justify-content(center);
+    @include flex-justify-content-center;
     @include flex-align-items(center);
     @include flex-grow(1);
      h2 {
-        font-size: 2.5em;
+        font-size: $main-h2;
         font-weight: bold;
         margin-bottom: 40px;
      }

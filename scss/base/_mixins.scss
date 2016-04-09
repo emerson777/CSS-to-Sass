@@ -44,7 +44,7 @@
 
 
 @mixin flex-basis($value){
-         webkit-flex-basis: $value;
+        -webkit-flex-basis: $value;
         -ms-flex-preferred-size: $value;
          flex-basis: $value;
 }
